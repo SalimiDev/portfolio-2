@@ -96,7 +96,7 @@ p.danger {
 }
 
 
-/************ Navbar Css ************/
+/************ Navbar Styles ************/
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -269,7 +269,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
-/************ Banner Css ************/
+/************ Banner Styles ************/
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
