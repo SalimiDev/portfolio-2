@@ -7,6 +7,9 @@ import meter1 from '../img/meter1.svg';
 import meter2 from '../img/meter2.svg';
 import meter3 from '../img/meter3.svg';
 import colorSharp from '../img/color-sharp.png';
+import projImg1 from '../img/project-img1.png';
+import projImg2 from '../img/project-img2.png';
+import projImg3 from '../img/project-img3.png';
 
 export const images = {
     logo,
@@ -18,4 +21,7 @@ export const images = {
     meter2,
     meter3,
     colorSharp,
+    projImg1,
+    projImg2,
+    projImg3,
 };
