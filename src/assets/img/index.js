@@ -11,6 +11,7 @@ import colorSharp2 from '../img/color-sharp2.png';
 import projImg1 from '../img/project-img1.png';
 import projImg2 from '../img/project-img2.png';
 import projImg3 from '../img/project-img3.png';
+import contactImg from '../img/contact-img.svg';
 
 export const images = {
     logo,
@@ -26,4 +27,5 @@ export const images = {
     projImg2,
     projImg3,
     colorSharp2,
+    contactImg,
 };

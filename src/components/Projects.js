@@ -39,12 +39,11 @@ const Projects = () => {
         },
     ];
     return (
-        <section className='project' id='project'>
+        <section className='project' id='projects'>
             <Container>
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sequi ratione illo.</p>
                         <Tab.Container id='projects-tabs' defaultActiveKey='first'>
                             <Nav
