@@ -7,17 +7,19 @@ import Bannner from './components/Bannner';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import MailchimpForm from './components/MailchimpForm';
 
 const App = () => {
-  return (
-    <div>
-      <NavBar/>
-      <Bannner/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
-    </div>
-  );
+    return (
+        <div>
+            <NavBar />
+            <Bannner />
+            <Skills />
+            <Projects />
+            <Contact />
+            <MailchimpForm />
+        </div>
+    );
 };
 
 export default App;
