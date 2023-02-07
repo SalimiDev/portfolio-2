@@ -14,7 +14,7 @@ const Bannner = () => {
     const [text, setText] = useState('');
     const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const [index, setIndex] = useState(1);
+    const [setIndex] = useState(1);
     const period = 2000;
 
     useEffect(() => {
@@ -25,6 +25,7 @@ const Bannner = () => {
         return () => {
             clearInterval(ticker);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [text]);
 
     const tick = () => {
