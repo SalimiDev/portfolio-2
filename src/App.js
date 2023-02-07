@@ -7,7 +7,7 @@ import Bannner from './components/Bannner';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import MailchimpForm from './components/MailchimpForm';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -17,7 +17,7 @@ const App = () => {
             <Skills />
             <Projects />
             <Contact />
-            <MailchimpForm />
+            <Footer />
         </div>
     );
 };
