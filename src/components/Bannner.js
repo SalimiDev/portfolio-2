@@ -14,6 +14,7 @@ const Bannner = () => {
     const [text, setText] = useState('');
     const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
     const [delta, setDelta] = useState(300 - Math.random() * 100);
+    // eslint-disable-next-line no-unused-vars
     const [index, setIndex] = useState(1);
     const period = 2000;
 
