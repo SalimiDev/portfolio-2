@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
+
 import { Container, Row, Col } from 'react-bootstrap';
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
 
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 
@@ -54,20 +57,25 @@ const Bannner = () => {
             <Container>
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={7}>
-                        <span className='tagline'>Welcome to my portfolio</span>
-                        <h1>
-                            {`Hi I'm Mehdi `}
-                            <span className='wrap'>{text}</span>
-                        </h1>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, magnam corrupti aperiam provident
-                            amet quos consequuntur totam quasi? Dolorum pariatur ab, laudantium aliquid asperiores excepturi
-                            ea quos ullam eius a dolore hic delectus quaerat molestias, iste officiis nemo deserunt id,
-                            eligendi quae quibusdam? Earum, officiis eos quos obcaecati labore voluptatum.
-                        </p>
-                        <button onClick={() => console.log('connect')}>
-                            Let's connect <ArrowRightCircle size={25} />
-                        </button>
+                        <TrackVisibility>
+                            {({ isVisible }) => (
+                                <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
+                                    <span className='tagline'>Welcome to my portfolio</span>
+                                    <h1>
+                                        {`Hi I'm Mehdi `}
+                                        <span className='wrap'>{text}</span>
+                                    </h1>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, magnam corrupti
+                                        aperiam provident amet quos consequuntur totam quasi? Dolorum pariatur ab, laudantium
+                                        aliquid asperiores excepturi.
+                                    </p>
+                                    <button onClick={() => console.log('connect')}>
+                                        Let's connect <ArrowRightCircle size={25} />
+                                    </button>
+                                </div>
+                            )}
+                        </TrackVisibility>
                     </Col>
 
                     <Col xs={12} md={6} xl={5}>

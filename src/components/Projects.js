@@ -5,6 +5,9 @@ import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 
 import ProjectCard from './ProjectCard';
 
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
+
 const Projects = () => {
     const projects = [
         {
@@ -43,8 +46,18 @@ const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sequi ratione illo.</p>
+                        <TrackVisibility>
+                            {({ isVisible }) => (
+                                <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
+                                    <h2>Projects</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem suscipit
+                                        tempora ipsam facere deserunt eius, vel harum est consequatur dolores, voluptatibus
+                                        dicta, distinctio ducimus blanditiis culpa libero aliquam nemo?
+                                    </p>
+                                </div>
+                            )}
+                        </TrackVisibility>
                         <Tab.Container id='projects-tabs' defaultActiveKey='first'>
                             <Nav
                                 variant='pills'
